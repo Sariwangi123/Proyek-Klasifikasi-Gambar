@@ -1,0 +1,37 @@
+# Python environment and cache
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local datasets and archives
+dataset/raw/*
+!dataset/raw/.gitkeep
+*.tar.gz
+*.tgz
+*.zip
+*.rar
+*.7z
+
+# Training outputs
+*.keras
+*.h5
+*.tflite
+metadata.json
+accuracy_loss_plot.png
+training_log.csv
+saved_model/
+tflite/
+tfjs_model/
+submission/saved_model/*
+submission/tflite/*
+submission/tfjs_model/*
+!submission/saved_model/.gitkeep
+!submission/tflite/.gitkeep
+!submission/tfjs_model/.gitkeep
+
+# OS/editor files
+.DS_Store
+Thumbs.db
