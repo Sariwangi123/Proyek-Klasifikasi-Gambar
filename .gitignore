@@ -1,5 +1,6 @@
 # Python environment and cache
 .venv/
+.venv-wsl/
 venv/
 env/
 __pycache__/
@@ -16,6 +17,7 @@ dataset/raw/*
 *.7z
 
 # Training outputs
+local_training/
 *.keras
 *.h5
 *.tflite
@@ -25,9 +27,15 @@ training_log.csv
 saved_model/
 tflite/
 tfjs_model/
-submission/saved_model/*
-submission/tflite/*
-submission/tfjs_model/*
+!submission/metadata.json
+!submission/accuracy_loss_plot.png
+!submission/training_log.csv
+!submission/saved_model/
+!submission/saved_model/**
+!submission/tflite/
+!submission/tflite/**
+!submission/tfjs_model/
+!submission/tfjs_model/**
 !submission/saved_model/.gitkeep
 !submission/tflite/.gitkeep
 !submission/tfjs_model/.gitkeep

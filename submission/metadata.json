@@ -1,0 +1,26 @@
+{
+  "dataset": "CIFAR-10",
+  "total_images": 60000,
+  "classes": [
+    "airplane",
+    "automobile",
+    "bird",
+    "cat",
+    "deer",
+    "dog",
+    "frog",
+    "horse",
+    "ship",
+    "truck"
+  ],
+  "train_images": 40000,
+  "validation_images": 10000,
+  "test_images": 10000,
+  "train_accuracy": 0.9829249978065491,
+  "test_accuracy": 0.9115999937057495,
+  "tflite_inference_example": {
+    "predicted_class": "cat",
+    "actual_class": "cat",
+    "confidence": 0.9749544858932495
+  }
+}

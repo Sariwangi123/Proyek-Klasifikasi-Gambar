@@ -14,7 +14,11 @@ submission/
   requirements.txt
 ```
 
-Folder `saved_model`, `tflite`, dan `tfjs_model` akan terisi setelah notebook atau `train_export.py` dijalankan.
+Folder model pada submission ini sudah berisi hasil export final:
+
+- SavedModel: `saved_model/saved_model.pb`
+- TF-Lite: `tflite/model.tflite` dan `tflite/label.txt`
+- TFJS: `tfjs_model/model.json` dan shard `.bin`
 
 ## Dataset
 
@@ -31,7 +35,16 @@ test        : 10000 gambar
 ## Menjalankan Notebook
 
 1. Install dependensi dari `requirements.txt`.
-2. Install converter TFJS dengan `pip install tensorflowjs==4.22.0 --no-deps`.
-3. Jalankan semua cell pada `notebook.ipynb`.
-4. Pastikan output training, evaluasi test set, plot akurasi/loss, dan contoh inference TF-Lite terlihat di notebook.
-5. Zip folder `submission` setelah folder model berhasil dibuat.
+2. Jalankan semua cell pada `notebook.ipynb`.
+3. Pastikan output training, evaluasi test set, plot akurasi/loss, dan contoh inference TF-Lite terlihat di notebook.
+4. Zip folder `submission` setelah folder model berhasil dibuat.
+
+## Hasil Terakhir
+
+Hasil evaluasi terakhir tersimpan di `metadata.json`.
+
+```text
+train accuracy : 98.29%
+test accuracy  : 91.16%
+inference      : predicted cat, actual cat
+```

@@ -19,7 +19,6 @@ Jika ingin memakai dataset folder sendiri, letakkan gambar di `dataset/raw/<nama
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\pip install -r requirements.txt
-.\.venv\Scripts\pip install tensorflowjs==4.22.0 --no-deps
 .\.venv\Scripts\python train_export.py --dataset cifar10 --epochs 40
 ```
 
@@ -36,3 +35,21 @@ submission/
 ```
 
 Notebook `submission/notebook.ipynb` berisi alur yang sama dan dapat dijalankan dari atas sampai bawah.
+
+## Training Lokal
+
+Untuk menjalankan pipeline lokal dan menghasilkan struktur `submission/` sesuai ketentuan, lihat `RUN_LOCAL_GPU.md` dan jalankan `train_local_gpu.py`.
+
+Hasil lokal terakhir menggunakan WSL2 GPU:
+
+```text
+train accuracy : 98.29%
+test accuracy  : 91.16%
+```
+
+Untuk export ulang dari checkpoint tanpa training ulang, jalankan:
+
+```bash
+source .venv-wsl/bin/activate
+python export_from_checkpoint.py
+```
