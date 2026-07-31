@@ -16,11 +16,11 @@
   "train_images": 48000,
   "validation_images": 6000,
   "test_images": 6000,
-  "train_accuracy": 0.9829249978065491,
-  "test_accuracy": 0.9115999937057495,
+  "train_accuracy": 0.9594791531562805,
+  "test_accuracy": 0.9599999785423279,
   "tflite_inference_example": {
-    "predicted_class": "cat",
-    "actual_class": "cat",
-    "confidence": 0.9749544858932495
+    "predicted_class": "airplane",
+    "actual_class": "airplane",
+    "confidence": 0.9999357461929321
   }
 }

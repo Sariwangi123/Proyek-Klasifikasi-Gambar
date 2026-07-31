@@ -40,11 +40,11 @@ Notebook `submission/notebook.ipynb` berisi alur yang sama dan dapat dijalankan 
 
 Untuk menjalankan pipeline lokal dan menghasilkan struktur `submission/` sesuai ketentuan, lihat `RUN_LOCAL_GPU.md` dan jalankan `train_local_gpu.py`.
 
-Hasil lokal terakhir menggunakan WSL2 GPU:
+Hasil notebook terakhir setelah dataset CIFAR-10 digabung ulang lalu dibagi manual menjadi train/validation/test:
 
 ```text
-train accuracy : 98.29%
-test accuracy  : 91.16%
+train accuracy : 95.95%
+test accuracy  : 96.00%
 ```
 
 Untuk export ulang dari checkpoint tanpa training ulang, jalankan:

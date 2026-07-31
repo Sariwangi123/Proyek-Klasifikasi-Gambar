@@ -22,7 +22,7 @@ Folder model pada submission ini sudah berisi hasil export final:
 
 ## Dataset
 
-Dataset utama adalah CIFAR-10 yang otomatis diunduh oleh `tf.keras.datasets.cifar10`. Dataset ini memiliki 60.000 gambar dari 10 kelas dan tidak termasuk dataset Rock Paper Scissors maupun X-Ray.
+Dataset utama adalah CIFAR-10. Seluruh gambar CIFAR-10 digabung terlebih dahulu ke folder kelas masing-masing, lalu dibagi ulang secara manual menjadi train, validation, dan test set. Dataset ini memiliki 60.000 gambar dari 10 kelas dan tidak termasuk dataset Rock Paper Scissors maupun X-Ray.
 
 Split data:
 
@@ -44,7 +44,7 @@ test        : 6000 gambar
 Hasil evaluasi terakhir tersimpan di `metadata.json`.
 
 ```text
-train accuracy : 98.29%
-test accuracy  : 91.16%
-inference      : predicted cat, actual cat
+train accuracy : 95.95%
+test accuracy  : 96.00%
+inference      : predicted airplane, actual airplane
 ```
