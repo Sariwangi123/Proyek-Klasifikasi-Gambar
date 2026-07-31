@@ -27,9 +27,9 @@ Dataset utama adalah CIFAR-10 yang otomatis diunduh oleh `tf.keras.datasets.cifa
 Split data:
 
 ```text
-train       : 40000 gambar
-validation  : 10000 gambar
-test        : 10000 gambar
+train       : 48000 gambar
+validation  : 6000 gambar
+test        : 6000 gambar
 ```
 
 ## Menjalankan Notebook

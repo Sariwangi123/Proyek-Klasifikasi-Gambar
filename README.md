@@ -10,7 +10,7 @@ Proyek ini memakai CIFAR-10 sebagai dataset utama:
 - 10 kelas.
 - Bukan dataset Rock Paper Scissors.
 - Bukan dataset X-Ray.
-- Split yang digunakan: 40.000 train, 10.000 validation, 10.000 test.
+- Split yang digunakan: 48.000 train, 6.000 validation, 6.000 test.
 
 Jika ingin memakai dataset folder sendiri, letakkan gambar di `dataset/raw/<nama_kelas>/` lalu jalankan script dengan `--dataset folder`.
 
